@@ -20,3 +20,6 @@ neuron_explainer
 *.mymemmap
 
 *.pyc
+
+*.data
+*.csv
