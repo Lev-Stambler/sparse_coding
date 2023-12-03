@@ -6,6 +6,7 @@ from einops import rearrange
 # Get the activations for the best dict features
 def get_feature_datapoints(feature_index, dictionary_activations, tokenizer, token_amount, dataset, k=10, setting="max"):
     best_feature_activations = dictionary_activations[:, feature_index]
+    print("AAAAA", best_feature_activations.shape)
     # Sort the features by activation, get the indices
     if setting=="max":
         found_indices = torch.argsort(best_feature_activations, descending=True)[:k]
