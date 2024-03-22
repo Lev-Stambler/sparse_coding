@@ -295,12 +295,6 @@ _, cluster_by_idx = kmeans_cosine(concat_other_layers, iterations=50, k=7, pca_d
 # In[ ]:
 
 
-get_ipython().system('jupyter nbconvert --to script LEV_deconstructive_interf.ipynb')
-
-
-# In[ ]:
-
-
 # In theory, the larger clusters should be the ones that are less important to care about??? Idk...
 [len(c) for c in cluster_by_idx]
 
